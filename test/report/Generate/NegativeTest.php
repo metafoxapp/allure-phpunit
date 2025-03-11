@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Qameta\Allure\PHPUnit\Test\Report\Generate;
 
-use PHPUnit\Event;
 use PHPUnit\Framework\Attributes\DoesNotPerformAssertions;
 use PHPUnit\Framework\TestCase;
 use Qameta\Allure\Allure;

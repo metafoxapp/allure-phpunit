@@ -25,9 +25,14 @@ final class TestSkippedSubscriber implements SkippedSubscriber
             return;
         }
 
-        $this
-            ->testLifecycle
-            ->switchTo($method)
-            ->updateStatus($event->message(), Status::skipped());
+        try{
+            $this
+                ->testLifecycle
+                ->switchTo($method)
+                ->updateStatus($event->message(), Status::skipped());
+        }catch (\Throwable $exception){
+
+        }
+
     }
 }
